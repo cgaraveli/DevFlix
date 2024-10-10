@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fonte geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.logo{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.logo img{
+    display: inline-block;
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Botões */
+.buttons {
+    margin: 20px 0;
+}
+
+.primeirobotao, .segundobotao, .botaocombo {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.primeirobotao, .botaocombo {
+    background-color: #00ff00;
+    color: #121212;
+}
+
+.segundobotao {
+    background-color: transparent;
+    border: 2px solid #00ff00;
+    color: #fff;
+}
+
+.planos {
+    color: #888;
+    font-size: 0.8em;
+}
+
+/* Seção Professores */
+.professores img {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* Seção Assista */
+.assista {
+    padding: 50px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+}
+
+.assista .content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.assista img {
+    max-width: 400px;
+}
+
+.assista .text {
+    margin-left: 30px;
+}
+
+.assista .text h2 {
+    font-size: 2em;
+}
+
+.assista .text p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Seção ComboDev */
+.combo-dev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #121212;
+}
+
+.combo-content {
+    max-width: 500px;
+    margin-right: 30px;
+}
+
+.combo-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.combo-images img {
+    max-width: 700px;
+}
+
+/* Seção Baixe Cursos */
+.baixe-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #1f1f1f;
+}
+
+.baixe-cursos .content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.baixe-cursos img {
+    max-width: 400px;
+    margin-right: 30px;
+}
+
+.baixe-cursos .text h2 {
+    font-size: 2em;
+}
+
+.baixe-cursos .text p {
+    font-size: 1.2em;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+/* Seção Dispositivos */
+.dispositivos {
+    text-align: center;
+    padding: 50px;
+    background-color: #000;
+}
+
+.dispositivos h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.devices {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.device {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.device img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.device p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Contato */
+.form-container {
+    background-color: #2d2d3e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 400px;
+    margin: 50px auto;
+}
+
+.form-container h1 {
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #2d2d3e;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #777;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.form-container button {
+    background-color: #00b300;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #009900;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #121212;
+    color: #888;
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.rodape .logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.rodape .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.rodape .links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.rodape .links a:hover {
+    text-decoration: underline;
+}
+
+.rodape .info p {
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+    .assista img, .combo-images img, .baixe-cursos img {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .devices {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rodape .links {
+        flex-direction: column;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .assista .content, .combo-dev, .baixe-cursos .content {
+        flex-direction: column;
+        text-align: center;
+    }
